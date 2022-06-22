@@ -1,0 +1,196 @@
+body {
+	background-color: black;
+	margin: 0;
+}
+
+body a {
+	color: white;
+}
+
+input[type=text] {
+	width: 200px;
+	padding: 10px 18px;
+	margin: 8px 0;
+	box-sizing: border-box;
+}
+
+button {
+	padding: 10px 18px;
+	min-width: 80px;
+	background-color: gold;
+}
+
+.search-bar {
+	text-align: center;
+	padding-top: 20px;
+	margin-bottom: 20px;
+}
+
+#container {
+	margin: auto;
+	width: 1200px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	color: white;
+}
+
+#container img {
+	transition: ease-in;
+	transition-duration: 100ms;
+}
+
+#container img:hover {
+	transform: scale(1.02);
+}
+
+.card {
+	position: relative;
+	width: 220px;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+}
+
+.hover-genre {
+	display: none;
+	transition: ease-in;
+	transition-duration: 100ms;
+}
+
+.card:hover .hover-genre {
+	position: absolute;
+	overflow: hidden;
+	width: 220px;
+	transform: translateY(-5px);
+	z-index: 2;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: block;
+}
+
+h3,
+h2 {
+	font-size: 14px;
+}
+
+.my-modal {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	z-index: 1;
+	background-color: rgba(0, 0, 0, 0.8);
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+}
+
+.my-modal-content {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	width: 600px;
+	height: 400px;
+	background-color: white;
+}
+
+.modal-left-side {
+	margin: 10px;
+	text-align: center;
+}
+
+.modal-right-side {
+	margin: 10px;
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+.show-info {
+	display: flex;
+}
+
+.no-information-error {
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+.top-exit-bar {
+	display: flex;
+	justify-content: right;
+	align-items: center;
+}
+
+.error-image {
+	text-align: center;
+	margin-top: 80px;
+	font-weight: 500;
+}
+
+.error-image img {
+	width: 100px;
+}
+
+.exit {
+	height: 30px;
+}
+
+.exit:hover {
+	cursor: pointer;
+	font-weight: 500;
+}
+
+/* dropwdown */
+.dropbtn {
+	background-color: #4caf50;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+	background-color: #3e8e41;
+}
